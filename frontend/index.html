@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07140f">
+  <title>Cricket Analytics Pro</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="ball">🏏</span> CRICKET <b>ANALYTICS PRO</b></a>
+    <span class="demo-pill">DEMO DATA</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">THE GAME, BY THE NUMBERS</p>
+      <h1>Every match.<br><span>Deeper insights.</span></h1>
+      <p class="intro">Explore match scorecards, team performance and cricket analytics in one place.</p>
+      <div class="search-row">
+        <input id="search" type="search" placeholder="Search teams, tournaments or venues…" aria-label="Search matches">
+        <button id="clearSearch" class="secondary">Clear</button>
+      </div>
+    </section>
+
+    <section class="section-head">
+      <div><p class="eyebrow">MATCH CENTRE</p><h2>Matches</h2></div>
+      <span id="matchCount" class="muted">Loading…</span>
+    </section>
+    <div id="matches" class="match-grid"><div class="loading">Loading match data…</div></div>
+
+    <section class="analysis-panel">
+      <p class="eyebrow">INSIGHT LAB</p>
+      <h2>Analytics & AI</h2>
+      <p class="muted">The analysis section is prepared for verified ball-by-ball data and a trained prediction model.</p>
+      <div id="insights" class="insights">Loading analytics notes…</div>
+    </section>
+
+    <footer>
+      <strong>Cricket Analytics Pro</strong>
+      <p>Prototype build. Sample scores are fictional demonstrations, not live cricket results.</p>
+    </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
